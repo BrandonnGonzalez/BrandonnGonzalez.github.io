@@ -310,4 +310,12 @@ body {
     100% {
         pointer-events: auto;
     }
+
+
+    .projectOne {
+
+    background-color: white;
+
+}
+
 }
