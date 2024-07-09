@@ -1,49 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio Website HTML | CSS | JavaScript</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript" src="app.js" defer></script>
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <!--Favicons-->
+    <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="icons/apple-touch-icon.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="icons/favicon-32x32.png"
+    />
+    <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="icons/favicon-16x16.png"
+    />
+    <link
+            rel="manifest"
+            href="icons/site.webmanifest"
+    />
+
+    <!--Animate CSS CDN-->
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Brandon Gonzalez | CS @ FIU | TIP Tech Fellow @ Codepath</title>
+
 </head>
 
 <body>
 
-<header class="header">
-    <a href="#" class="logo">Brandon.</a>
+<!-- Navbar -->
+<nav>
+    <h1>Brandon Gonzalez</h1>
+    <ul class="navigation">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="burger-menu" id="burger-menu">
+        <ion-icon class="bars" name="menu-outline"></ion-icon>
+    </button>
+</nav>
 
-    <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="#">Services</a>
-        <a href="Portfolio.html">Projects</a>
-        <a href="#">Contact</a>
-    </nav>
-</header>
-
-<section class="home">
-    <div class="home-content">
-        <h1>Hi, I'm Brandon Gonzalez</h1>
-        <h3>Aspiring Full Stack Developer</h3>
-        <p> I'm Brandon Gonzalez, a computer science student at Florida International University, my academic journey is enriched by certifications in Javascript, Front end development, and full stack development. I possess a strong command of programming languages, including Java, Python, and Javascript, which I've effectively applied in software engineering projects and roles, such as in a Full-stack Messaging App and a Full-stack membership platform. In these roles, I've significantly improved system efficiencies and performance. My entrepreneurial spirit is evident in the projects I've led, such as a the full-stack messaging app and the membership platform. I am also a part of INIT FIU, as well as FIU Powerlifting where I promote my innovation, collaboration, creations, and skills! My involvement in various tech teams showcases my commitment to fostering a dynamic technical community. </p>
-        <div class="btn-box">
-            <a href="Brandon_Gonzalez_Spring_Resume_2024.pdf" target="_blank">Resume</a>
-            <a href="mailto:brandonyt@icloud.com">Let's Talk</a>
-        </div>
+<!-- Hero Section -->
+<section class="hero" id="about">
+    <img
+            src="icons/ME.jpeg"
+            alt="Brandon-Gonzalez"
+            loading="lazy"
+            class="hero-img"
+    />
+    <div class="bio animate__animated animate__shakeX">
+        <h2 class="bio-title">About Me</h2>
+        <p class="bio-text">
+            Hello everyone! My name is Brandon Gonzalez and I am a student at Florida International University, studying Computer Science. I currently live in Miami, Florida, but am open to relocating for work. Below are some of my most recent and significant projects I have worked on. Feel free to connect with me for networking opportunities, job opportunities, or even project collaborations!
+        </p>
     </div>
-
-    <div class="home-sci">
-        <a href="#"><i class='bx bxl-facebook'></i></a>
-        <a href="https://github.com/BrandonnGonzalez" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/bgonz207/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    </div>
-
-    <span class="home-imgHover"></span>
 </section>
 
-</body>
+<!-- More about -->
+<section class="more-about">
+    <h2>More About Me</h2>
+    <p>
+        Programming languages: HTML, CSS, JavaScript, Python, Java, SQL/NoSQL.
+    </p>
+    <p> Frameworks/Libraries: React.js, Node.js, Angular.js, Redux </p>
+    <p> Developer Tools: Git/Github, Visual Studio Code, Linux, DOM, HTTP, APIS (REST), UX/UI </p>
+    <p>
+        Some of my personal hobbies include powerlifting, listening to music, and playing video games!
+    </p>
+    <p>
+        I am fluent in English and am working on my Spanish.
+    </p>
+</section>
 
+<!-- Skills section -->
+<section class="skills" id="skills">
+    <h2 class="skill-header">My Top Skills</h2>
+
+    <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+            <img
+                    src="icons/icons8-python-50.png"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+            />
+            <img
+                    src="icons/react.256x228.png"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+            />
+            <img
+                    src="icons/icons8-html-filetype-50.png"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+            />
+        </div>
+
+        <div class="second-set animate__animated animate__pulse">
+            <img
+                    src="icons/icons8-css3-50.png"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+            />
+            <img
+                    src="icons/icons8-javascript-logo-50.png"
+                    alt=""
+                    loading="lazy"
+                    class="icon icon-card"
+            />
+        </div>
+    </div>
+</section>
+
+<!-- Projects section -->
+<section class="projects" id="projects">
+    <h2 class="projects-title">Some of my Recent Projects</h2>
+    <div class="projects-container">
+        <div class="project-container project-card">
+            <h3 class="project-title">  Full Stack Membership Platform | React, TypeScript, Tailwind, MySQL </h3>
+            <p class="project-details">
+                • Engineered a full-stack membership portal platform, leveraging React.js and Next.js for a responsive
+                frontend, improving load times by 50%. <br>
+                • Elegantly styled with Tailwind CSS, while integrating a MySQL database, handling over 180 members. <br>
+                • Utilized Clerk for advanced user authentication & session handling, which enhanced security & user
+                experience by 30%.
+            </p>
+            <a href="" target="_blank" class="project-link">*UNDER CONSTRUCTION*</a>
+        </div>
+        <div class="project-container project-card">
+            <h3 class="project-title"> Full Stack Messaging App | Node.JS, React.js, ChatEngine.io CSS/HTML, Github</h3>
+            <p class="project-details">
+                • Led a team in developing a high-performance web application, handling 150+ concurrent users, achieving a
+                35% increase in user engagement through utilizing efficient frameworks and interfaces. <br>
+                • Utilized ChatEngine.io (API) to smoothly build the chat services, along with CSS for styling and HTML for
+                the web document structure.
+            </p>
+            <a href="https://github.com/BrandonnGonzalez/-Full-Stack-Messenger-Chat-App" target="_blank" class="project-link">Check Out my Implementations Here</a>
+        </div>
+        <div class="project-container project-card">
+            <h3 class="project-title"> Calorie Goal and Visualization Tracker | HTML, CSS, JavaScript, Python
+            </h3>
+            <p class="project-details">
+                • Developed a caloric goal system and visualization tool, using numpy and matplotlib libraries, which tracked
+                over 250 user entries. <br>
+                • Provided to my University’s powerlifting team for nutrition tracking, resulting in optimized decision-making
+                and 30% increase in user engagement.
+            </p>
+            <a href="https://github.com/BrandonnGonzalez/Calorie-Tracker-and-Visualization-" target="_blank" class="project-link">Check Out my Implementations Here</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact section -->
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-form-container">
+        <div class="contact-form">
+            <form action="https://formspree.io/f/mnnaqknb" method="POST">
+                <div class="form-control">
+                    <label for="name">Name</label>
+                    <input
+                            type="text"
+                            id="name"
+                            name="sender-name"
+                            placeholder="Enter Your Name"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="email">Email</label>
+                    <input
+                            type="email"
+                            id="email"
+                            name="sender-email"
+                            placeholder="Enter Your Email"
+                            class="input-field"
+                            required
+                    />
+                </div>
+                <div class="form-control">
+                    <label for="message">Message</label>
+                    <textarea
+                            id="message"
+                            cols="60"
+                            rows="10"
+                            placeholder="Enter Your Message"
+                            name="message"
+                            class="input-field"
+                            required
+                    ></textarea>
+                </div>
+                <div class="form-control">
+                    <label form="submit">Click Submit Button Below</label>
+                    <input
+                            type="submit"
+                            value="Submit"
+                            id="submit-btn"
+                            class="submit-btn"
+                    />
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- Social accounts - Fixed to the right -->
+<div class="socials">
+    <a href="https://www.instagram.com/_brandongonzalezz/" target="_blank">
+        <img
+                src="images/icons8-instagram.gif"
+                alt="Instagram"
+                loading="lazy"
+                class="socicon"
+        />
+    </a>
+    <a href="https://www.linkedin.com/in/bgonz207/" target="_blank">
+        <img
+                src="images/icons8-linkedin-circled.gif"
+                alt="Linkedin"
+                loading="lazy"
+                class="socicon"
+        />
+    </a>
+    <a href="https://github.com/BrandonnGonzalez" target="_blank">
+        <img
+                src="images/icons8-github.gif"
+                alt="Github"
+                loading="lazy"
+                class="socicon"
+        />
+    </a>
+</div>
+
+<!-- Scroll to top -->
+<button id="scroll-up">
+    <i class="scroll-up">
+        <img
+                src="images/icons8-scroll-up.gif"
+                class="socicon up-arrow"
+                alt="scroll-up"
+        />
+    </i>
+</button>
+
+<!-- Footer section -->
+<footer>
+    <p class="copy">&copy; Copyright 2024</p>
+    <p class="copy">
+        <a href="https://www.linkedin.com/in/bgonz207/" target="_blank">
+            Brandon Gonzalez
+        </a>
+    </p>
+</footer>
+
+<!-- Website scripts -->
+<script src="assets/js/app.js" defer></script>
+
+<!-- Ion icons scripts -->
+<script
+        type="module"
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+></script>
+<script
+        nomodule
+        src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+></script>
+</body>
 </html>
